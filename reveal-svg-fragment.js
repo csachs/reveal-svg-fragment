@@ -28,7 +28,7 @@ THE SOFTWARE.
     local = proto === "file:",
     d3 = window.d3,
     defaults = {
-      d3: (local ? "http:" : proto) + "//cdn.jsdelivr.net/d3js/latest/d3.min.js",
+      d3: (local ? "http:" : proto) + "//cdn.jsdelivr.net/npm/d3@3.5.17/d3.min.js",
       selector: "title"
     };
 
@@ -37,7 +37,7 @@ THE SOFTWARE.
     d3 = d3 || window.d3;
     var container = d3.selectAll("[data-svg-fragment]"),
       slides = d3.select(".slides");
-      
+
     container.data(function(){
       return container[0].map(function(d){
         var $ = d3.select(d);

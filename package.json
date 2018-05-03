@@ -1,0 +1,19 @@
+{
+  "name": "reveal-svg-fragment",
+  "version": "0.0.1",
+  "description": "allows fragments of SVGs to be revealed sequentially in reveal.js",
+  "main": "reveal-svg-fragment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csachs/reveal-svg-fragment.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csachs/reveal-svg-fragment/issues"
+  },
+  "homepage": "https://github.com/csachs/reveal-svg-fragment#readme"
+}
