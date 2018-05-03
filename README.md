@@ -1,3 +1,7 @@
+# IMPORTANT
+
+This is a fork of this [gist](https://gist.github.com/bollwyvl/fe1d2806449487cdf88a) by user [@bollwyvl](http://github.com/bollwyvl), to fix some minor issues and allow node packaging.
+
 # SVG fragment builds for [reveal.js](https://github.com/hakimel/reveal.js)
 
 ## Basic use case
