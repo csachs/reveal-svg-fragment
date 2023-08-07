@@ -50,7 +50,8 @@ Works with [[http://inkscape.org][Inkscape]]
 #+ATTR_HTML: :style font-size: 60%;
 Created by [[http://github.com/bollwyvl][@bollwyvl]] for reveal.js
 
-Example adapted for [[https://github.com/yjwen/org-reveal][org-reveal]]
+Example adapted for
+[[https://github.com/yjwen/org-reveal][org-reveal]] by =@olberger= here: https://github.com/olberger/reveal-svg-fragment
 
 * Basic HTML Test
 
@@ -69,6 +70,12 @@ Example adapted for [[https://github.com/yjwen/org-reveal][org-reveal]]
               <a class="fragment" title="[*|label=fragment2]"></a>
             </div>
 #+END_EXPORT
+
+* Questions / Feedback
+
+Comment/fork on [[https://github.com/csachs/reveal-svg-fragment][GitHub]] (original) or [[https://github.com/olberger/reveal-svg-fragment][olberger's fork]]
+
+file:example/github.svg
 
 # Local Variables:
 # End:
