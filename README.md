@@ -68,3 +68,9 @@ It has three layers: `base`, `fragment1` and `fragment2`.
     - `python -m SimpleHTTPServer`
 - probably won't work in IE
   - wontfix
+
+## org-reveal example
+
+See `org-reveal-example.org` for an example using org-mode and
+[org-reveal](https://github.com/yjwen/org-reveal), converted from the
+provided example.

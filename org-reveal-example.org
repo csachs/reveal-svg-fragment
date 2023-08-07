@@ -1,0 +1,72 @@
+#+Title: Reveal.js SVG Fragments with Org-Reveal
+#+Author: Olivier Berger
+#+Email: olivier.berger@telecom-sudparis.eu
+
+#+OPTIONS: num:nil 
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil tags:t
+
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc ':t
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+#+OPTIONS: html-preamble:nil html-scripts:nil html-style:nil
+
+#+REVEAL_HLEVEL: 1
+#+REVEAL_THEME: white
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_EXTRA_JS:      { src: './reveal-svg-fragment.js' }
+
+#+OPTIONS: tags:nil ^:nil
+
+#+OPTIONS: reveal_title_slide:nil
+
+#+REVEAL_INIT_OPTIONS: controls: true, progress: true, history: true, center: true
+
+* Reveal.js SVG Fragments
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 50%">
+Built with [[http://d3js.org][d3]]
+
+[[file:example/d3.svg]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float: right; width: 50%">
+Works with [[http://inkscape.org][Inkscape]]
+
+[[file:example/inkscape.svg]]
+#+REVEAL_HTML: </div>
+
+# NBSP here:
+ 
+
+#+ATTR_HTML: :style font-size: 60%;
+Created by [[http://github.com/bollwyvl][@bollwyvl]] for reveal.js
+
+Example adapted for [[https://github.com/yjwen/org-reveal][org-reveal]]
+
+* Basic HTML Test
+
+#+BEGIN_EXPORT html
+<div data-svg-fragment="example/test.svg#[*|label=base]">
+            <a class="fragment" title="[*|label=fragment1]"></a>
+            <a class="fragment" title="[*|label=fragment2]"></a>
+          </div>
+#+END_EXPORT
+ 
+* Another order
+
+#+BEGIN_EXPORT html
+<div data-svg-fragment="example/test.svg#[*|label=fragment1]">
+              <a class="fragment" title="[*|label=base]"></a>
+              <a class="fragment" title="[*|label=fragment2]"></a>
+            </div>
+#+END_EXPORT
+
+# Local Variables:
+# End:
