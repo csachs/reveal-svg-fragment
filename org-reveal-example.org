@@ -20,12 +20,14 @@
 #+REVEAL_HLEVEL: 1
 #+REVEAL_THEME: white
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+REVEAL_EXTRA_JS:      { src: './reveal-svg-fragment.js' }
+#+REVEAL_EXTRA_JS:      { src: './reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }
 
 #+OPTIONS: tags:nil ^:nil
 
 #+OPTIONS: reveal_title_slide:nil
 
+# Change the d3 location here if needed, with the svgFragment option
+# +REVEAL_INIT_OPTIONS: controls: true, progress: true, history: true, center: true, svgFragment: { d3: "./js/d3.min.js" }
 #+REVEAL_INIT_OPTIONS: controls: true, progress: true, history: true, center: true
 
 * Reveal.js SVG Fragments
