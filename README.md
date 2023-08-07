@@ -35,6 +35,7 @@ It has three layers: `base`, `fragment1` and `fragment2`.
       <script>
         ...
         Reveal.initialize({
+          ...
           dependencies: [
             ...
             {
@@ -43,15 +44,17 @@ It has three layers: `base`, `fragment1` and `fragment2`.
               condition: function(){
                 return !!document.querySelector( '[data-svg-fragment]' );
               }
-              // Additional options
-              // defaults to using already-loaded version, or CDN
-              //d3: "./d3.min.js",
-              // use a different attribute for your fragment selector
-              //selector: "title",
             }
             ...
           ]
         ...
+        // Additional options
+        //svgFragment: {
+          // defaults to using already-loaded version, or CDN
+          //d3: "./d3.min.js",
+          // use a different attribute for your fragment selector
+          //selector: "title",
+        //}
         }
         ...
       </script>
@@ -68,3 +71,9 @@ It has three layers: `base`, `fragment1` and `fragment2`.
     - `python -m SimpleHTTPServer`
 - probably won't work in IE
   - wontfix
+
+## org-reveal example
+
+See `org-reveal-example.org` for an example using org-mode and
+[org-reveal](https://github.com/yjwen/org-reveal), converted from the
+provided example.
